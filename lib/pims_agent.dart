@@ -2,10 +2,16 @@ library dart_pims;
 
 import 'dart:async';
 
+@MirrorsUsed(symbols: '*', override: '*')
+import 'dart:mirrors';
+
+import 'package:logging/logging.dart' show Logger, Level, LogRecord;
 import 'package:sqljocky/sqljocky.dart' show ConnectionPool, Query, Result, Results;
 
 part 'pims_model.dart';
 part 'pims_database.dart';
+
+final Logger log = new Logger('pims_agent');
 
 class PimsAgent {
   final Map<int, String> streams = {};

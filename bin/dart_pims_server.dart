@@ -3,9 +3,6 @@ library dart_pims_server;
 import 'dart:convert';
 import 'dart:io';
 
-@MirrorsUsed(symbols: '*', override: '*')
-import 'dart:mirrors';
-
 import 'package:http_server/http_server.dart' as http_server;
 import 'package:route/server.dart' show Router;
 import 'package:logging/logging.dart' show Logger, Level, LogRecord;

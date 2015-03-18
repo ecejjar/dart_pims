@@ -1,5 +1,8 @@
 library pims_test;
 
+@MirrorsUsed(symbols: '*', override: '*')
+import 'dart:mirrors';
+
 import 'package:unittest/unittest.dart';
 import 'package:dart_pims_server/pims_agent.dart';
 
