@@ -1,0 +1,11 @@
+name: dart_pims_server
+description: A Presence and Instant Messaging System client and server written in Dart
+dependencies:
+  browser: any
+  http_server: any
+  logging: any
+  path: any
+  route: any
+  sqljocky: any
+  stack_trace: any
+  unittest: any
